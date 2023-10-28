@@ -1,4 +1,6 @@
-html {
+body {
+    font-family: 'Lora', serif;
+    background-color: #7BA3A3;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -23,7 +25,7 @@ html {
 
 .nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 50rem;
     list-style: none;
     padding: 0;
@@ -37,6 +39,7 @@ li a {
 }
 
 li a:hover {
-    color: lightblue;
+    color: #C5D5E4;
     font-weight: 700;
+    font-size: 1.5rem;
 }

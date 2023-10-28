@@ -1,10 +1,10 @@
 body {
-    font-family: 'Lora', serif;
-    background-color: #7BA3A3;
+    font-family: 'Roboto Slab', serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-align: center;
+    font-weight: 400;
 }
 
 .header {
@@ -32,29 +32,38 @@ body {
     list-style: none;
     padding: 0;
     font-size: 1.25rem;
+    font-weight: 700;
 }
 
 li a {
     text-decoration: none;
-    color: #F7F5F3;
+    text-transform: uppercase;
+    color: white;
     text-align: center;
 }
 
 li a:hover {
-    color: #C5D5E4;
+    background-color: #C5D5E4;
+    color: black;
     font-weight: 700;
-    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 10px;
 }
 
 .section {
-    padding-bottom: 2.5rem;
+    margin: 2.5rem;
 }
 
 .section > h2 {
     margin: 0;
-    padding-top: 1.5rem;
     font-size: 2rem;
-    color: #F7F5F3;
+}
+
+#description {
+    width: 60%;
+    margin: auto;
+    font-style: italic;
+    padding: 1rem;
 }
 
 .card-container {
@@ -62,41 +71,53 @@ li a:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-around;
+    padding: 1rem;
 }
 
 .card {
-    width: 20rem;
+    width: 18rem;
     display: flex;
     flex-direction: column;
     justify-content: space-betweena;
     align-content: center;
     text-align: center;
-    background-color: #F7F5F3;
-    margin: 15px;
-    border-radius: 10px;
+    background-color: #F6F4F4;
+    margin: 1.25rem;
 }
 
 .card-image {
     display: block;
-    height: 20rem;
-    width: 20rem;
+    height: 18rem;
+    width: 18rem;
     object-fit: cover;
     object-position: top;
-    border-radius: 10px 10px 0 0;
 }
 
-.card h4, .card h3 {
+.card p, .card h3 {
     margin: 0.6rem;
-}
-
-#portfolio {
-    background-color: #938581;
 }
 
 #portfolio h3 {
     font-size: 1.2rem;
 }
 
-#team {
-    background-color: #B4AAA7;
+.footer {
+    background-color: #D1C7C7;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+#contact {
+    background-color: white;
+    padding: 1rem
+}
+
+.footer img {
+    display: block;
+    height: 2rem;
+    align-self: center;
+    background-color: white;
+    padding: 1rem
 }

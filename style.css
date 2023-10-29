@@ -7,6 +7,8 @@ body {
     font-weight: 400;
 }
 
+/* Header */
+
 .header {
     background-image: url('./resources/images/newyorkcity.jpg');
     background-size: cover;
@@ -50,6 +52,8 @@ li a:hover {
     border-radius: 10px;
 }
 
+/* Main */
+
 .section {
     margin: 2.5rem;
 }
@@ -59,12 +63,16 @@ li a:hover {
     font-size: 2rem;
 }
 
+/* Description Section */
+
 #description {
     width: 60%;
     margin: auto;
     font-style: italic;
     padding: 1rem;
 }
+
+/* Portfolio and Team Sections */
 
 .card-container {
     display: flex;
@@ -75,8 +83,9 @@ li a:hover {
 }
 
 .card {
-    width: 18rem;
-    max-width: 21rem;
+    width: 17rem;
+    max-width: 18rem;
+    min-width: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: space-betweena;
@@ -84,12 +93,12 @@ li a:hover {
     text-align: center;
     background-color: #F6F4F4;
     margin: 1.25rem;
-    flex-grow: 1;
+    flex: 1 1;
 }
 
 .card-image {
     display: block;
-    height: 18rem;
+    height: 17rem;
     width: 100%;
     object-fit: cover;
     object-position: top;
@@ -102,6 +111,8 @@ li a:hover {
 #portfolio h3 {
     font-size: 1.2rem;
 }
+
+/* Footer */
 
 .footer {
     background-color: #D1C7C7;

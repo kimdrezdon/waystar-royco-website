@@ -76,6 +76,7 @@ li a:hover {
 
 .card {
     width: 18rem;
+    max-width: 21rem;
     display: flex;
     flex-direction: column;
     justify-content: space-betweena;
@@ -83,12 +84,13 @@ li a:hover {
     text-align: center;
     background-color: #F6F4F4;
     margin: 1.25rem;
+    flex-grow: 1;
 }
 
 .card-image {
     display: block;
     height: 18rem;
-    width: 18rem;
+    width: 100%;
     object-fit: cover;
     object-position: top;
 }
@@ -111,7 +113,8 @@ li a:hover {
 
 #contact {
     background-color: white;
-    padding: 1rem
+    padding: 1rem;
+    flex-shrink: 1;
 }
 
 .footer img {
@@ -119,5 +122,6 @@ li a:hover {
     height: 2rem;
     align-self: center;
     background-color: white;
-    padding: 1rem
+    padding: 1rem;
+    flex-shrink: 1;
 }

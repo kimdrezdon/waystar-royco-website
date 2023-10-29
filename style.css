@@ -10,11 +10,11 @@ body {
 /* Header */
 
 .header {
-    background-image: url('./resources/images/newyorkcity.jpg');
+    background-image: url('./resources/images/newyorkcity.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
-    height: 40rem;
+    height: 35rem;
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -22,8 +22,7 @@ body {
 }
 
 .logo img {
-    max-height: 30rem;
-    max-width: 100%;
+    max-height: 25rem;
     border-radius: 0 0 10px 10px;
 }
 
@@ -41,15 +40,17 @@ li a {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
+    background-color: hsl(209, 36%, 83%, 0.2);
     text-align: center;
+    padding: 0.3rem;
+    border-radius: 10px;
+    transition: all 1s ease-in;
 }
 
 li a:hover {
-    background-color: #C5D5E4;
+    background-color: hsl(209, 36%, 83%, 0.9);
     color: black;
-    font-weight: 700;
     padding: 0.5rem;
-    border-radius: 10px;
 }
 
 /* Main */

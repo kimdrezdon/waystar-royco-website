@@ -88,12 +88,11 @@ li a:hover {
 }
 
 .card {
-    width: 17rem;
     max-width: 18rem;
     min-width: 15rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-betweena;
+    justify-content: flex-start;
     align-content: center;
     text-align: center;
     background-color: #F6F4F4;
@@ -130,7 +129,6 @@ li a:hover {
 #contact {
     background-color: white;
     padding: 1rem;
-    flex-shrink: 1;
 }
 
 .footer img {
@@ -139,7 +137,6 @@ li a:hover {
     align-self: center;
     background-color: white;
     padding: 1rem;
-    flex-shrink: 1;
 }
 
 @media only screen and (max-width: 800px) {
@@ -160,6 +157,64 @@ li a:hover {
     }
 
     #description {
-        width: 80%;
+        width: 90%;
+    }
+
+    .section {
+        margin: 0;
+    }
+
+    .card {
+        margin: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .footer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        font-size: 0.75rem;
+        padding: 1rem;
+    }
+
+    .footer img {
+        height: 1rem;
+        padding: 0.25rem;
+    }
+
+    #contact {
+        padding: 0 0.5rem;
+        margin-top: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .card-container {
+        padding: 0.75rem;
+    }
+
+    .card {
+        max-width: 13rem;
+        min-width: 11rem;
+        margin: 0.5rem;
+    }
+
+    .card-image {
+        height: 12rem;
+    }
+
+    /* .card-text {
+        justify-self: center;
+    } */
+
+    .card-text p, .card-text h3 {
+        margin: 0.2rem;
+        font-size: 0.8rem;
+    }
+
+    #portfolio h3,
+    .card-text h3 {
+        font-size: 1rem;
     }
 }

@@ -44,17 +44,17 @@ li a {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
-    background-color: hsl(209, 36%, 83%, 0.2);
+    background-color: hsl(210, 11%, 58%);
     text-align: center;
     padding: 0.3rem;
     border-radius: 10px;
-    transition: all 1s ease-in;
+    transition: background-color 1s ease;
 }
 
 li a:hover {
-    background-color: hsl(209, 36%, 83%, 0.9);
+    background-color: hsl(209, 36%, 83%);
     color: black;
-    padding: 0.5rem;
+    transition: all 1s ease;
 }
 
 /* Main */
@@ -98,6 +98,7 @@ li a:hover {
     background-color: #F6F4F4;
     margin: 1.25rem;
     flex: 1 1;
+    border-radius: 5%;
 }
 
 .card-image {
@@ -106,6 +107,8 @@ li a:hover {
     width: 100%;
     object-fit: cover;
     object-position: top;
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
 }
 
 .card p, .card h3 {
@@ -129,6 +132,7 @@ li a:hover {
 #contact {
     background-color: white;
     padding: 1rem;
+    opacity: 90%;
 }
 
 .footer img {
@@ -137,13 +141,14 @@ li a:hover {
     align-self: center;
     background-color: white;
     padding: 1rem;
+    opacity: 90%;
 }
 
 @media only screen and (max-width: 800px) {
     .header {
         height: auto;
         width: 100%;
-        /* overflow: hidden; */
+        background-image: none;
     }
 
     .logo img {
@@ -203,10 +208,6 @@ li a:hover {
     .card-image {
         height: 12rem;
     }
-
-    /* .card-text {
-        justify-self: center;
-    } */
 
     .card-text p, .card-text h3 {
         margin: 0.2rem;
